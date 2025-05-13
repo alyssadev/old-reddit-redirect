@@ -1,0 +1,27 @@
+name: Makefile CI
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Make
+      run: make old-reddit-redirect-v2.0.5-esr.xpi
+
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v1-release
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: old-reddit-redirect-v2.0.5-esr.xpi
+        asset_name: old-reddit-redirect-v2.0.5-esr.xpi
+        tag: v2.0.5-esr
+        overwrite: true

@@ -21,4 +21,5 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         name: v2.0.5-esr
+        tag_name: v2.0.5-esr
         files: old-reddit-redirect-v2.0.5-esr.xpi

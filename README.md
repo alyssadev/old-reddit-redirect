@@ -1,7 +1,6 @@
-# Old Reddit Redirect
+# Old Reddit Redirect (ESR fork)
 
-> [!NOTE]  
-> If you're wondering why the extension recently requested new permissions, please see https://github.com/tom-james-watson/old-reddit-redirect/issues/117
+Why does this exist? https://github.com/tom-james-watson/old-reddit-redirect/issues/155
 
 [Chrome extension](https://chrome.google.com/webstore/detail/old-reddit-redirect/dneaehbmnbhcippjikoajpoabadpodje)
 
